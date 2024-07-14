@@ -27,9 +27,9 @@ jobs:
 
       - name: Upload production-ready build files
         uses: actions/upload artifact@v2
-          with:
-            name: production-files
-            path: ./dist
+        with:
+          name: production-files
+          path: ./dist
 
   deploy:
     name: Deploy
